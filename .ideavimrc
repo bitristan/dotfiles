@@ -34,31 +34,34 @@ vmap fd <Esc>
 
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 
-noremap ,xm :action SearchEverywhere
-noremap ,ci :action CommentByLineComment
-noremap ,xs :action SaveAll
-noremap ,aa :action $Copy
-noremap ,zz :action $Paste
-noremap ,yy :action PasteMultiple
-noremap ,qq :action FindInPath
-noremap ,ss :action Find
-noremap ,fp :action CopyPaths
-noremap ,xk :action CloseEdito
-noremap ,rr :action RecentFiles
-noremap ,kk :action GotoFile
-noremap ,ii :action GotoSymbol
-noremap <C-]> :action GotoImplementation
-noremap ,xz :action ActivateTerminalToolWindow
+noremap ,xm :action SearchEverywhere<CR>
+noremap ,ci :action CommentByLineComment<CR>
+noremap ,xs :action SaveAll<CR>
+noremap ,aa :action $Copy<CR>
+noremap ,zz :action $Paste<CR>
+noremap ,yy :action PasteMultiple<CR>
+noremap ,qq :action FindInPath<CR>
+noremap ,ss :action Find<CR>
+noremap ,fp :action CopyPaths<CR>
+noremap ,xk :action CloseEdito<CR>
+noremap ,rr :action RecentFiles<CR>
+noremap ,kk :action GotoFile<CR>
+noremap ,ii :action GotoSymbol<CR>
+noremap <C-]> :action GotoImplementation<CR>
+noremap ,xz :action ActivateTerminalToolWindow<CR>
+noremap ,tf :action ToggleFullScreen<CR>
+noremap ,td :action ToggleDistractionFreeMode<CR>
+noremap ,tp :action TogglePresentationMode<CR>
 
 " ideavim don't support numberic character in hotkey in 0.55
 " it's fixed in 0.55.1
 noremap ,x1 <C-W>o
-noremap ,x2 :split
-noremap ,x3 :vsplit
+noremap ,x2 :split<CR>
+noremap ,x3 :vsplit<CR>
 noremap ,x0 :q
 " move window
-noremap ,wh <C-W>h
-noremap ,wl <C-W>l
-noremap ,wj <C-W>j
-noremap ,wk <C-W>k
-noremap ,xx :action EditorSelectWord
+noremap ,wh <C-W>h<CR>
+noremap ,wl <C-W>l<CR>
+noremap ,wj <C-W>j<CR>
+noremap ,wk <C-W>k<CR>
+noremap ,xx :action EditorSelectWord<CR>
