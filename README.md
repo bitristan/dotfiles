@@ -28,3 +28,4 @@ noremap ,td :action ToggleDistractionFreeMode<CR>
 noremap ,tp :action TogglePresentationMode<CR>
 ```
 
+IdeaVim的配置文件是 ~/.ideavimrc，修改配置后重启IntelliJ编辑器或者在命令模式下输入`:source ~/.ideavimrc`就可以生效
