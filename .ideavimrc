@@ -47,11 +47,14 @@ noremap ,xk :action CloseEdito<CR>
 noremap ,rr :action RecentFiles<CR>
 noremap ,kk :action GotoFile<CR>
 noremap ,ii :action GotoSymbol<CR>
-noremap <C-]> :action GotoImplementation<CR>
+noremap ,gi :action GotoImplementation<CR>
+noremap ,gd :action GotoDeclaration<CR>
 noremap ,xz :action ActivateTerminalToolWindow<CR>
 noremap ,tf :action ToggleFullScreen<CR>
 noremap ,td :action ToggleDistractionFreeMode<CR>
 noremap ,tp :action TogglePresentationMode<CR>
+noremap ,jb :action Back<CR>
+
 
 " ideavim don't support numberic character in hotkey in 0.55
 " it's fixed in 0.55.1
