@@ -2,6 +2,7 @@
 
 - [IdeaVim配置文件](https://github.com/Tinker-S/dotfiles/blob/master/.ideavimrc)
 - [bash配置文件](https://github.com/Tinker-S/dotfiles/blob/master/.bashrc)
+- [i3配置文件](https://github.com/Tinker-S/dotfiles/blob/master/i3/config)
 
 ## Intellij系列编辑器使用IdeaVim
 Vim文本编辑是最高效的文本编辑操作方式，结合JetBrains公司的[IdeaVim](https://github.com/JetBrains/ideavim)插件，我们可以实现非常高效的文本编辑以及编辑器相关的各种常用操作，掌握以下几个要点，可以让你的编程有飞一般的感觉
