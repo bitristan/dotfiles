@@ -4,6 +4,14 @@
 - [bash配置文件](https://github.com/Tinker-S/dotfiles/blob/master/.bashrc)
 - [i3配置文件](https://github.com/Tinker-S/dotfiles/blob/master/i3/config)
 
+## i3wm个性化配置
+- Mod键设置为Alt
+- 字体设置`source code pro`
+- 默认布局方式更改为tabbed，分屏窗口太小了不太习惯
+- 重设切换窗口焦点的快捷键，使用`vim`的移动按键`hjkl`
+- `Mod+Return`和Android studio的修复错误的快捷键冲突了，修改为`Mod+Shift+Return`
+
+
 ## Intellij系列编辑器使用IdeaVim
 Vim文本编辑是最高效的文本编辑操作方式，结合JetBrains公司的[IdeaVim](https://github.com/JetBrains/ideavim)插件，我们可以实现非常高效的文本编辑以及编辑器相关的各种常用操作，掌握以下几个要点，可以让你的编程有飞一般的感觉
 
