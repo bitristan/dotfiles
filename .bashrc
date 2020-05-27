@@ -203,6 +203,30 @@ function ff {
     echo -n ${cli} | pclip
 }
 
+# find&cd a directory. Copy its full path into clipboard
+function zz()
+{
+    local cli=`baseff dir $*`
+    if [ -z "${cli}" ];then
+        echo "Nothing found!"
+    else
+        echo ${cli}
+        cd ${cli}
+        echo -n ${cli} | pclip
+    fi
+}
+
+# any file on this computer
+function aa {
+    if [ -z "$1" ]; then
+        local cli=`locate / | fzfnormal`
+    else
+        local cli=`locate "$1" | fzfnormal`
+    fi
+    echo ${cli}
+    echo -n ${cli} | pclip
+}
+
 # some more ls aliases
 alias g="google-chrome"
 alias emacs="emacs -nw"
