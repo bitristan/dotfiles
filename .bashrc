@@ -261,6 +261,9 @@ export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/21.1.6352462
 export ANDROID_STUDIO_HOME=/home/sunting/tools/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
 
+# disable homebrew auto update
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/sunting/.sdkman"
 [[ -s "/home/sunting/.sdkman/bin/sdkman-init.sh" ]] && source "/home/sunting/.sdkman/bin/sdkman-init.sh"
