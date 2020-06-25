@@ -228,6 +228,7 @@ function aa {
 }
 
 # some more ls aliases
+alias rm="gio trash"
 alias g="google-chrome"
 alias emacs="emacs -nw"
 
@@ -255,11 +256,13 @@ if ! shopt -oq posix; then
 fi
 
 # custom environment variables
-export ANDROID_HOME=/home/sunting/tools/android-sdk-linux
+export TOOLS_HOME=$HOME/tools
+export ANDROID_HOME=$TOOLS_HOME/android-sdk-linux
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/21.1.6352462
-export ANDROID_STUDIO_HOME=/home/sunting/tools/android-studio
+export ANDROID_STUDIO_HOME=$TOOLS_HOME/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
+export PATH=$TOOLS_HOME/go/bin:$PATH
 
 # disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
