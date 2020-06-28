@@ -228,12 +228,14 @@ function aa {
 }
 
 # some more ls aliases
+alias d="cd"
 alias rm="gio trash"
 alias g="google-chrome"
 alias emacs="emacs -nw"
 
 alias gs="git status --short -b"
 alias gb="git branch -vv"
+alias gco="git checkout"
 alias gc="git commit"
 alias gca="git commit --amend"
 alias gd="git diff"
