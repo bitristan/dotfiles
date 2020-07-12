@@ -16,7 +16,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+HISTSIZE=10000
 HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
@@ -228,8 +228,10 @@ function aa {
 }
 
 # some more ls aliases
+alias l="ls"
 alias d="cd"
 alias rm="gio trash"
+alias rmi="/bin/rm"
 alias g="google-chrome"
 alias emacs="emacs -nw"
 
