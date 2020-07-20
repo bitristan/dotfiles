@@ -240,13 +240,14 @@ alias gb="git branch -vv"
 alias gco="git checkout"
 alias gc="git commit"
 alias gca="git commit --amend"
+alias gcp="git cherry-pick"
 alias gd="git diff"
 alias gds="git diff --stat"
 alias gdc="git diff --cached"
 alias gdcs="git diff --cached --stat"
-alias grh='git reset --hard HEAD'
-alias grh1='git reset --hard HEAD^'
-alias grh2='git reset --hard HEAD^^'
+alias grh="git reset --hard HEAD"
+alias grh1="git reset --hard HEAD^"
+alias grh2="git reset --hard HEAD^^"
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
