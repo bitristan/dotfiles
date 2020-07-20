@@ -235,6 +235,7 @@ alias rmi="/bin/rm"
 alias g="google-chrome"
 alias emacs="emacs -nw"
 
+# git alias
 alias gs="git status --short -b"
 alias gb="git branch -vv"
 alias gco="git checkout"
@@ -248,6 +249,11 @@ alias gdcs="git diff --cached --stat"
 alias grh="git reset --hard HEAD"
 alias grh1="git reset --hard HEAD^"
 alias grh2="git reset --hard HEAD^^"
+
+# tmux alias
+alias tma="tmux a -t"
+alias tmn="tmux new-session"
+alias tml="tmux list-session"
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
