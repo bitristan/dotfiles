@@ -255,6 +255,22 @@ alias tma="tmux a -t"
 alias tmn="tmux new-session"
 alias tml="tmux list-session"
 
+# adb alias
+alias alog="adb logcat -v threadtime"
+alias ashell="adb shell"
+alias adump="adb shell dumpsys"
+
+# adb find package name by keyword and copy it to clipboard
+function adbfp {
+    local cli=`adb shell pm list package | grep -i $1 | awk -F ':' '{print $2}'`
+    if [ -z "${cli}" ];then
+        echo "Nothing found!"
+    else
+        echo ${cli}
+        echo -n ${cli} | pclip
+    fi
+}
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
