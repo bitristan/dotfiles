@@ -291,5 +291,10 @@ export ANDROID_STUDIO_HOME=$TOOLS_HOME/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
 export PATH=$TOOLS_HOME/go/bin:$PATH
 
+# flutter
+export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
+export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
+export PATH=$TOOLS_HOME/flutter/bin:$PATH
+
 # disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
