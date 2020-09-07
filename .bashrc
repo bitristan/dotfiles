@@ -233,7 +233,7 @@ alias d="cd"
 alias rm="gio trash"
 alias rmi="/bin/rm"
 alias g="google-chrome"
-alias emacs="emacs -nw"
+alias emacs="TERM=xterm-24bit emacs -nw"
 
 # git alias
 alias gs="git status --short -b"
