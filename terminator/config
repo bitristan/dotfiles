@@ -3,17 +3,16 @@
   title_transmit_bg_color = "#1c1b19"
   title_inactive_fg_color = "#fce8c3"
   title_inactive_bg_color = "#2d2c29"
-
 [keybindings]
 [profiles]
   [[default]]
-    palette = "#1c1b19:#ef2f27:#519f50:#fbb829:#2c78bf:#e02c6d:#0aaeb3:#918175:#2d2c29:#f75341:#98bc37:#fed06e:#68a8e4:#ff5c8f:#53fde9:#fce8c3"
-    foreground_color = "#fce8c3"
     background_color = "#1c1b19"
     cursor_color = "#fce8c3"
-    font = Monospace 15
+    font = Fira Code Medium 18
+    foreground_color = "#fce8c3"
     show_titlebar = False
     scrollbar_position = hidden
+    palette = "#1c1b19:#ef2f27:#519f50:#fbb829:#2c78bf:#e02c6d:#0aaeb3:#918175:#2d2c29:#f75341:#98bc37:#fed06e:#68a8e4:#ff5c8f:#53fde9:#fce8c3"
     use_system_font = False
 [layouts]
   [[default]]
