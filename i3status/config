@@ -9,6 +9,11 @@
 general {
         colors = true
         interval = 5
+	output_format = "i3bar"
+	colors = true
+	color_good = "#519F50"
+	color_degraded = "#FBB829"
+	color_bad = "#EF2F27"
 }
 
 order += "cpu_usage"
