@@ -228,14 +228,19 @@ function aa {
 }
 
 # some more ls aliases
-alias l="ls"
+alias l="ls --color=auto"
+alias ll="ls --color=auto"
+alias la="ls -al --color=auto"
 alias d="cd"
 alias rm="gio trash"
 alias rmi="/bin/rm"
 alias g="google-chrome"
 alias emacs="TERM=xterm-24bit emacs -nw"
+alias studio=$HOME/tools/android-studio/bin/studio.sh
 
 # git alias
+alias gm="git merge"
+alias gp="git pull -r"
 alias gs="git status --short -b"
 alias gb="git branch -vv"
 alias gco="git checkout"
@@ -249,6 +254,10 @@ alias gdcs="git diff --cached --stat"
 alias grh="git reset --hard HEAD"
 alias grh1="git reset --hard HEAD^"
 alias grh2="git reset --hard HEAD^^"
+
+# repo alias
+alias rpp="repo forall -c git pull -r"
+alias rps="repo sync -q --force-sync -j8"
 
 # tmux alias
 alias tma="tmux a -t"
@@ -286,10 +295,11 @@ fi
 export TOOLS_HOME=$HOME/tools
 export ANDROID_HOME=$TOOLS_HOME/android-sdk-linux
 export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/build-tools/30.0.2:$PATH
 export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/current
 export ANDROID_STUDIO_HOME=$TOOLS_HOME/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
-export PATH=$TOOLS_HOME/go/bin:$PATH
+export PATH=$TOOLS_HOME/go/bin:$HOME/go/bin:$PATH
 
 # flutter
 export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
