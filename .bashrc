@@ -251,6 +251,7 @@ alias gd="git diff"
 alias gds="git diff --stat"
 alias gdc="git diff --cached"
 alias gdcs="git diff --cached --stat"
+alias gr="git reset"
 alias grh="git reset --hard HEAD"
 alias grh1="git reset --hard HEAD^"
 alias grh2="git reset --hard HEAD^^"
@@ -305,6 +306,11 @@ export PATH=$TOOLS_HOME/go/bin:$HOME/go/bin:$PATH
 export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
 export PATH=$TOOLS_HOME/flutter/bin:$PATH
+
+# rust
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+export PATH=$HOME/.cargo/bin:$PATH
 
 # disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
