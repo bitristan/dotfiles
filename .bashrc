@@ -229,11 +229,11 @@ function aa {
 
 # some more ls aliases
 alias l="ls --color=auto"
-alias ll="ls --color=auto"
+alias ls="ls --color=auto"
+alias ll="ls -l --color=auto"
 alias la="ls -al --color=auto"
+alias cl="clear"
 alias d="cd"
-alias rm="gio trash"
-alias rmi="/bin/rm"
 alias g="google-chrome"
 alias emacs="TERM=xterm-24bit emacs -nw"
 alias studio=$HOME/tools/android-studio/bin/studio.sh
