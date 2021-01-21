@@ -270,9 +270,9 @@ alias tmn="tmux new-session"
 alias tml="tmux list-session"
 
 # adb alias
-alias alog="adb logcat -v threadtime"
-alias ashell="adb shell"
-alias adump="adb shell dumpsys"
+alias adbl="adb logcat -v threadtime"
+alias adbs="adb shell"
+alias adbd="adb shell dumpsys"
 
 # adb find package name by keyword and copy it to clipboard
 function adbfp {
