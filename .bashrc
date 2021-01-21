@@ -2,6 +2,10 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+if [ `uname` = "Darwin" ]; then
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -228,10 +232,9 @@ function aa {
 }
 
 # some more ls aliases
-alias l="ls --color=auto"
-alias ls="ls --color=auto"
-alias ll="ls -l --color=auto"
-alias la="ls -al --color=auto"
+alias l="ls -l"
+alias ll="ls -l"
+alias la="ls -al"
 alias cl="clear"
 alias d="cd"
 alias g="google-chrome"
