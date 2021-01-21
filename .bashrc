@@ -239,6 +239,7 @@ alias emacs="TERM=xterm-24bit emacs -nw"
 alias studio=$HOME/tools/android-studio/bin/studio.sh
 
 # git alias
+alias ga="git add ."
 alias gm="git merge"
 alias gp="git pull -r"
 alias gs="git status --short -b"
@@ -314,3 +315,6 @@ export PATH=$HOME/.cargo/bin:$PATH
 
 # disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
