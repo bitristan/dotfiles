@@ -207,6 +207,14 @@ function ff {
     echo -n ${cli} | pclip
 }
 
+function ii {
+    local cli=`baseff file $* | xargs echo -n`
+    if [[ "${cli}" =~ ".png" ]]; then
+        echo -n ${cli} | xargs -I{} xclip -selection clipboard -t image/png -i {}
+        echo "${cli} => clipboard"
+    fi
+}
+
 # find&cd a directory. Copy its full path into clipboard
 function zz()
 {
