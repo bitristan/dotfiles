@@ -239,6 +239,19 @@ function aa {
     echo -n ${cli} | pclip
 }
 
+# support for emacs-libvterm
+vterm_printf(){
+    if [ -n "$TMUX" ]; then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+
 # some more ls aliases
 alias l="ls -l"
 alias ll="ls -l"
