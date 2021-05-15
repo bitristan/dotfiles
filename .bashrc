@@ -294,6 +294,7 @@ alias tml="tmux list-session"
 alias adbl="adb logcat -v threadtime"
 alias adbs="adb shell"
 alias adbd="adb shell dumpsys"
+alias gw="./gradlew"
 
 # adb find package name by keyword and copy it to clipboard
 function adbfp {
@@ -319,6 +320,17 @@ fi
 
 # custom environment variables
 export TOOLS_HOME=$HOME/tools
+
+# java
+# Add variant java version by update-alternatives. eg.
+# `sudo update-alternatives --install /home/sunting/tools/jdk_current java_home /home/sunting/tools/jdk1.8.0_281/ 100`
+# `sudo update-alternatives --install /home/sunting/tools/jdk_current java_home /usr/lib/jvm/java-11-openjdk-amd64/ 200`
+# Use `sudo update-alternatives --config java_home` to change JDK version.
+export JAVA_HOME=$TOOLS_HOME/jdk_current
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/tools/dt.jar:$JAVA_HOME/tools/lib.jar
+
+# android
 export ANDROID_HOME=$TOOLS_HOME/android-sdk-linux
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/build-tools/30.0.2:$PATH
