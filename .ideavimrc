@@ -54,6 +54,7 @@ noremap ,tf :action ToggleFullScreen<CR>
 noremap ,td :action ToggleDistractionFreeMode<CR>
 noremap ,tp :action TogglePresentationMode<CR>
 noremap ,jb :action Back<CR>
+noremap ,sa :action Annotate<CR>
 
 
 " ideavim don't support numberic character in hotkey in 0.55
