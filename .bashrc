@@ -296,6 +296,9 @@ alias adbs="adb shell"
 alias adbd="adb shell dumpsys"
 alias gw="./gradlew"
 
+# fd-find
+alias fd="fd-find"
+
 # adb find package name by keyword and copy it to clipboard
 function adbfp {
     local cli=`adb shell pm list package | grep -i $1 | awk -F ':' '{print $2}'`
