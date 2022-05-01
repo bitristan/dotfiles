@@ -342,6 +342,11 @@ export ANDROID_STUDIO_HOME=$TOOLS_HOME/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
 export PATH=$TOOLS_HOME/go/bin:$HOME/go/bin:$PATH
 
+# go
+export GOROOT=$TOOLS_HOME/go
+export GOPATH=$HOME/workspace/go
+export GO111MODULE=on
+
 # flutter
 export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
@@ -351,6 +356,9 @@ export PATH=$TOOLS_HOME/flutter/bin:$PATH
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 export PATH=$HOME/.cargo/bin:$PATH
+
+# linux brew
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 # disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1

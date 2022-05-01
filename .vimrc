@@ -1,6 +1,5 @@
 imap fd <ESC>
 
-syntax on
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 set incsearch           " search as characters are entered
